@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>LOG IN</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div class="btn"></div>
+                <button type="button" class="toggle" onclick="login()">Log In</button>
+                <button type="button" class="toggle" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><box-icon type='logo' name='instagram' color="rgb(210, 136, 192)" ></box-icon></a>
+                <a href="#"><box-icon type='logo' name='facebook' color="lavender"></box-icon></a>
+                <a href="#"><box-icon type='logo' name='linkedin' color="lavender"></box-icon></a>
+                <a href="#"><box-icon type='logo' name='twitter' color="lavender"></box-icon></a>
+                <a href="#"><box-icon type='logo' name='github' color="lavender"></box-icon></a>
+            </div>
+            <form action="" id="login" class="input-group">
+                <input type="text" class="field" placeholder="User Name" required>
+                <input type="password" class="field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox" required> <span>Remember Password</span>
+                <button type="submit" class="submit">Log In</button>
+            </form>
+            <form action="" id="register" class="input-group">
+                <input type="text" class="field" placeholder="User Name" required>
+                <input type="email" class="field" placeholder="Email" required>
+                <input type="password" class="field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox" required> <span>I agree to Terms & Conditions</span>
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register(){
+            x.style.left= "-400px";
+            y.style.left= "50px";
+            z.style.left= "110px";
+        }
+        function login(){
+            x.style.left= "50px";
+            y.style.left= "450px";
+            z.style.left= "0px";
+        }
+    </script>
+    
+</body>
+</html>
